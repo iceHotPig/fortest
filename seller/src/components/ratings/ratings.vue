@@ -94,7 +94,7 @@
 		},
 		created(){
 			let arrTmp = [];
-			this.$http.get('./api/ratings').then(response=>{
+			this.$http.get('api/ratings').then(response=>{
 				this.ratings=response.body.data;
 				this.$nextTick(()=>{
 					if (!this.scroll) {
